@@ -9,12 +9,26 @@
 </head>
 <body>
 
+  <!-- ✅ Updated Navbar with working mobile menu -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-success">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Crunchy Clouds</a>
+      <a class="navbar-brand" href="index.html">Crunchy Clouds</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
+  <!-- Hero Section -->
   <header class="hero text-center text-white">
     <div class="overlay">
       <h1>Spicy Lime Thunder</h1>
@@ -22,6 +36,12 @@
     </div>
   </header>
 
+  <!-- ✅ Main Product Image -->
+  <div class="text-center my-4">
+    <img src="images/spicy-lime.png" class="img-fluid rounded shadow" style="max-width: 400px;" alt="Spicy Lime Thunder Chips">
+  </div>
+
+  <!-- Main Content -->
   <main class="container my-5">
     <section class="row align-items-center">
       <div class="col-md-6 mb-4 mb-md-0">
@@ -29,20 +49,23 @@
       </div>
       <div class="col-md-6">
         <h2>Flavor Explosion</h2>
-        <p>Feel the lightning with every bite! Our Spicy Lime Thunder chips mix tangy citrus with a fiery pepper blast. A chip for the bold, the brave, and the snack-hungry.</p>
+        <p>Feel the fire with every bite! Our Spicy Lime Thunder chips mix tangy citrus with a fiery pepper blast. A chip for the bold, the brave, and the snack-hungry.</p>
       </div>
     </section>
 
     <section class="text-center my-5">
       <h2>Snack Anytime</h2>
-      <p>Whether you're gaming, studying, or road-tripping — Spicy Lime Thunder has your back. No dip needed, but we won’t stop you.</p>
+      <p>Whether you're gaming, studying, or enjoying time with family, Spicy Lime Thunder has your back. But, you might need some dip.</p>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="bg-dark text-white text-center py-3">
     &copy; 2025 Crunchy Clouds. Built for chip lovers, by chip lovers.
   </footer>
 
+  <!-- ✅ Bootstrap JS for responsive nav toggle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
